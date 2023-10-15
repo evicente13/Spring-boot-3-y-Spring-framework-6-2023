@@ -1,10 +1,18 @@
 package com.debuggeando_ideas.best_travel.domain.entities;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
-@Entity(name = "hotel")
+@Entity(name = "hotel")@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Builder
+
 public class HotelEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
