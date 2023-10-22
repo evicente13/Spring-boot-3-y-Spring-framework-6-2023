@@ -14,6 +14,7 @@ import java.util.Set;
 @Builder
 public class TourEntity {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @OneToMany(
             cascade = CascadeType.ALL,
